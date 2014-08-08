@@ -13,7 +13,7 @@ Things You Can Do With This:
 ---------------------------------------------
 
 You can embed the Metal Quiz in your own site (just copy + paste in source or a plain text widget):
-<pre><iframe src="http://metalquiz.lockedowndesign.com/" height="450" width="600"></iframe></pre>
+<code><iframe src="http://metalquiz.lockedowndesign.com/" height="450" width="600"></iframe></code>
 
 You can modify it for your own needs, just provide attribution. This has an MIT license.
 
