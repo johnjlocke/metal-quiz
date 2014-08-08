@@ -12,7 +12,7 @@ Much thanks to Chris Coyier and CSS-Tricks for giving me the initial blueprint: 
 Things You Can Do With This:
 ---------------------------------------------
 
-You can embed the Metal Quiz in your own site (just copy + paste in source or a plain text widget):
+You can embed the Metal Quiz in your own site (just copy + paste in source or a plain text widget. Don't forget to change the brackets):
 
 <code>[iframe src="http://metalquiz.lockedowndesign.com/" height="450" width="600"][/iframe]</code>
 
