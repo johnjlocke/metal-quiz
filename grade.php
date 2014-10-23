@@ -81,7 +81,7 @@
           <div id="modalbg"></div>
           <div id="modalwindow">
                <p id="modalmsg">Copy the code below to embed it into your own website.</p>
-               <textarea class="c-p"><iframe src="http://quizzler.bonefestsisters.com/" height="450" width="600"></iframe></textarea>
+               <textarea class="c-p"><iframe src="http://metalquiz.lockedowndesign.com/" height="450" width="600"></iframe></textarea>
                <button class="close-btn" onclick="modalhide()">Close</button>
           </div>
           <div class="share lb"><a href="http://www.facebook.com/sharer.php?u=http://www.metalquiz.lockedowndesign.com/&&p%5bsummary%5d=What%20Metal%20Band%20Are%20You?%20Quiz%20Take%20this%20quiz%20to%20find%20out." title="Share On Facebook" target="_blank"><img src="../imgs/fb.png" alt="Share this on Facebook" /></a></div>
