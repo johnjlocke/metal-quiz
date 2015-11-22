@@ -8,8 +8,6 @@
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
   <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-  <!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>-->
 </head>
 
 <body>
@@ -19,17 +17,39 @@
 		<h1 class="transparent index-headline" >Here&#8217;s What Metal Band You Are</h1>
 		
         <?php
+        
+           /**
+            * Make a new variable for each question, so we can grab the answers from them.
+            * If you have more than five questions, add answer variables as appropriate.
+            */
             
             $answer1 = $_POST['question-1-answers'];
             $answer2 = $_POST['question-2-answers'];
             $answer3 = $_POST['question-3-answers'];
             $answer4 = $_POST['question-4-answers'];
             $answer5 = $_POST['question-5-answers'];
+            
+            /**
+            * Now, make outcome variables, and set those values to zero.
+            * These variables represent our four outcome screens.
+            * Whatever outcome variable has the most points at the end, "wins".
+            */
 
             $totalA = 0;
             $totalB = 0;
             $totalC = 0;
             $totalD = 0;
+            
+            /**
+            * For each question, look at the answers, and add points to the outcome variables as indicated.
+            * You may ask, "Why aren't we giving one point to A, one point to B, etc?".
+            * Good question. It has to do with tie breakers.
+            * In a five question test, what if someone "votes" twice each for A and B, and once for C?
+            * How do you determine what wins between A and B in that scenario?
+            * There has to be at least one unevenly weighted question to break ties, but you can have more than one.
+            * For this quiz, I also wanted to add give points to different outcomes for certain answers.
+            * 
+            */
 
             if ($answer1 == "A") { $totalA = $totalA + 1.17; $totalD = $totalD + .06; }
             if ($answer1 == "B") { $totalB = $totalB + 1.15; $totalC = $totalC + .05; }
@@ -59,6 +79,13 @@
             ?>
 
             <div class="results-overlay">
+            	
+            <?php 
+            /**
+             * Now we compare our outcome variables.
+             * I used AND (&&) in the if statements. You can also use OR (||).
+             */ 
+            ?>
 
             <?php
             if ($totalA > $totalB && $totalA > $totalC && $totalA > $totalD) {
@@ -77,6 +104,13 @@
         ?>     
                 </div>
             </div>
+            
+           <?php 
+           /**
+            * Modal window, in case people wan to share your quiz.
+            * Virality!!!
+            */
+           ?>
 	   <p class="embed"><button class="embed-btn" onclick="modalshow()">Embed This Quiz</button></p>
           <div id="modalbg"></div>
           <div id="modalwindow">
