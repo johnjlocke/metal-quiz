@@ -19,9 +19,19 @@
 		<h1 class="transparent index-headline">Lockedown Design: What Metal Band Are You?</h1>
 		
 		<form action="grade.php" method="post" id="quiz">
-		    
+		
+		<?php
+		/**
+	         * Each <li> holds a question. Follow the same pattern if you want to add more questions.
+	         * If you add more questions, be sure to add more $answer variables in grade.php 
+	         * (See lines 26-30 in grade.php).
+	         * The important values here: name value on the rasio buttons for each answer, .fwrd class on labels.
+	         * You need the name value to store answers for grading.
+	         * In this demo, the frwd class controls question advancement through jQuery.
+	         */
+            ?>    
             <ul id="test-questions">
-            
+                
                 <li>
                     <div class="quiz-overlay"></div>
                     <h3>What do you enjoy watching on TV?</h3>
@@ -169,6 +179,18 @@
     </div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+	<?php
+	/**
+         * This quiz uses jQuery to move the questions up each time you click an answer.
+         * You can change the layout of the quiz, but you may need to adjust the $mt variable.
+         * The $mt variable is the margin-top of the quiz.
+         * This gives the illusion of each question being on a separate page.
+         * It is actually one page, just this element moves.
+         * Quiz-takers need to get to the end and hit the Submt button to see results.
+         * The answers get stored and sent to grade.php for evaluation.
+         * 
+         */
+        ?>
     <script>
            (function($) {
               var timeout= null;
@@ -188,7 +210,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-53648309-1', 'auto');
+  ga('create', 'UA-00000000-1', 'auto');
   ga('send', 'pageview');
 </script>
 </body>
