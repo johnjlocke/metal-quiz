@@ -16,7 +16,7 @@
 
 	<div id="page-wrap">
 
-		<h1 class="transparent index-headline">Lockedown Design: What Metal Band Are You?</h1>
+		<h1 class="transparent index-headline">Lockedown SEO: What Metal Band Are You?</h1>
 		
 		<form action="grade.php" method="post" id="quiz">
 		
