@@ -14,7 +14,7 @@ Things You Can Do With This:
 
 You can embed the Metal Quiz in your own site (just copy + paste in source or a plain text widget. Don't forget to change the brackets):
 
-<code>[iframe src="https://metalquiz.sacramentowebdesigns.com/" height="450" width="600"][/iframe]</code>
+<code>[iframe src="https://heavyquiz.com/" height="450" width="600"][/iframe]</code>
 
 You can modify it for your own needs. This has an MIT license.
 
